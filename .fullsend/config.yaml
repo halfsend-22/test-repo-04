@@ -21,9 +21,12 @@ roles:
 agents:
     - name: good-local
       source: harness/good-local.yaml
+    - name: bad-hash
+      source: https://raw.githubusercontent.com/halfsend-22/test-repo-04-url-harness-host/main/harness/bad-hash.yaml#sha256=0000000000000000000000000000000000000000000000000000000000000000
 allowed_remote_resources:
     - https://raw.githubusercontent.com/fullsend-ai/fullsend/
     - https://raw.githubusercontent.com/fullsend-ai/agents/
+    - https://raw.githubusercontent.com/halfsend-22/test-repo-04-url-harness-host/
 mint_url: https://bt-9aeccc1e-bt-mint.fullsend-ai.workers.dev
 inference:
     project: it-gcp-konflux-e2e-fullsend
